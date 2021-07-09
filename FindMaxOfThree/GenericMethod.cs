@@ -24,6 +24,11 @@ namespace FindMaxOfThree
             var maxValue = Sort(array);
             return maxValue[array.Length - 1];
         }
+        public T MaxMethod()
+        {
+            T maximumValue = this.MaxValue();
+            return maximumValue;
+        }
         
     }
 }

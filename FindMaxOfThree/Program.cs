@@ -6,10 +6,7 @@ namespace FindMaxOfThree
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Maximum Of Three........!");
-            FindMaxValue maxValue = new FindMaxValue();
-            string maximum = maxValue.MaxString("Tvs","Vivek","Dell");
-            Console.WriteLine("Maximum Value among three is :" + maximum);
+           
 
             int[] intArray = { 3, 5, 7, 22, 56, 77 };
             float[] floatArray = { 12.3f, 3, 6f, 57.4f, 33.5f };
@@ -19,7 +16,9 @@ namespace FindMaxOfThree
             Maximum<float> floatMax = new Maximum<float>(floatArray);
             Maximum<string> stringMax = new Maximum<string>(stringArray);
 
-            Console.WriteLine("Max Integer value among given input is :"+intMax.MaxValue());
+            Console.WriteLine("Max Integer value among given input is :"+intMax.MaxMethod());
+            Console.WriteLine("Max Float Value among given input is :"+floatMax.MaxMethod());
+            Console.WriteLine("Max String Value among given inputt is :"+stringMax.MaxMethod());
         }
     }
 }
