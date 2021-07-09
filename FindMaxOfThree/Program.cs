@@ -8,7 +8,7 @@ namespace FindMaxOfThree
         {
             Console.WriteLine("Maximum Of Three........!");
             FindMaxValue maxValue = new FindMaxValue();
-            double maximum = maxValue.MaxDouble(11.29f, 13.78, 29.4f);
+            string maximum = maxValue.MaxString("Tvs","Vivek","Dell");
             Console.WriteLine("Maximum Value among three is :" + maximum);
         }
     }
